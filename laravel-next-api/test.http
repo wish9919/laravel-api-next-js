@@ -1,0 +1,47 @@
+GET http://127.0.0.1:8000/api/posts HTTP/1.1
+
+
+###
+
+POST  http://127.0.0.1:8000/api/posts HTTP/1.1
+content-type: application/json
+
+{
+
+    "title":"My New Title",
+    "content":"My New Content"
+
+}
+
+###
+
+PUT  http://127.0.0.1:8000/api/posts/1 HTTP/1.1
+content-type: application/json
+
+{
+
+    "title":"My New Title (updated)",
+    "content":"My Posr Content (updated)"
+
+}
+
+
+###
+
+
+DELETE  http://127.0.0.1:8000/api/posts/6 HTTP/1.1
+
+
+
+#### User Create
+
+GET http://127.0.0.1:8000/api/user-create HTTP/1.1
+
+####
+
+POST http://127.0.0.1:8000/api/login HTTP/1.1
+
+{
+    "email": "wishvantha@explorelogy.lk",
+    "password": "password" 
+}
